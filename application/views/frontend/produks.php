@@ -2,7 +2,7 @@
 
 <head>
 	<title>
-		Home
+		Daftar Produk
 	</title>
 </head>
 <div class="container-xxl flex-grow-1 container-p-y">

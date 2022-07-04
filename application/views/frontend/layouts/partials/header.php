@@ -7,7 +7,9 @@
 		<div class="navbar-nav align-items-center">
 			<div class="nav-item d-flex align-items-center">
 				<i class="bx bx-search fs-4 lh-0"></i>
-				<input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
+				<form action="<?= base_url('/') ?>search" method="get">
+					<input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." name="keyword" />
+				</form>
 			</div>
 		</div>
 		<!-- /Search -->
@@ -51,12 +53,12 @@
 	<div class="navbar-nav-left d-flex align-items-center container-xxl" id="navbar-collapse">
 		<ul class="navbar-nav flex-row align-items-center gap-4">
 			<li class="nav-item">
-				<a href="#" class="text-white bg-primary p-2">
+				<a href="<?= base_url('/') ?>produk" class="<?= ($parent == "produk") ? 'text-white bg-primary p-2' : 'text-dark' ?>">
 					<i class='bx bxs-package'></i> Produk
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="tokos" class="text-dark">
+				<a href="<?= base_url('/') ?>toko" class="<?= ($parent == "toko") ? 'text-white bg-primary p-2' : 'text-dark' ?>">
 					<i class='bx bx-store'></i> Toko
 				</a>
 			</li>

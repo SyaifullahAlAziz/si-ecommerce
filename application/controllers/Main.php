@@ -22,6 +22,6 @@ class Main extends CI_Controller
 	public function index()
 	{
 		// Redirect to home page
-		redirect('/home');
+		redirect('/produk');
 	}
 }

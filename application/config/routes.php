@@ -54,7 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Front-end
-$route['home'] = 'frontend/home';
+$route['produk'] = 'frontend/produk';
+$route['toko'] = 'frontend/toko';
+$route['search'] = 'frontend/search';
 
 //halaman admin
 $route['admin/login']['GET']   = 'backend/login/index';
