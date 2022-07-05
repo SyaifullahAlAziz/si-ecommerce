@@ -67,5 +67,5 @@ $route['translate_uri_dashes'] = FALSE;
 	$route['user']['GET']  				= 'user/home/index'; // Home page
 
 	// Request Handler
-	$route['user/aksi-login']['GET']	= 'user/login/aksiLogin'; // Login check page
+	$route['user/aksilogin']['POST']	= 'user/login/aksiLogin'; // Login check page
 	$route['user/logout']['GET']   		= 'user/login/aksiLogout'; // Register page

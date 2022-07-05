@@ -56,10 +56,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<?php for ($i = 1; $i <= 4; $i++) : ?>
+		<?php foreach ($terlaris as $key => $value): ?>
 			<div class="col-md-6 col-lg-3 mb-3">
 				<div class="card h-100">
-					<img class="card-img-top" src="<?= base_url('assets') ?>/img/banners/<?= $i % 3 + 1 ?>.jpg" alt="Card image cap" />
+					<img class="card-img-top" src="<?= base_url('assets') ?>/img/banners/<?= $value % 3 + 1 ?>.jpg" alt="Card image cap" />
 					<div class="card-body">
 						<h4 class="card-title m-0">Sanjai Bambu Kuning</h4>
 						<div class="my-1">
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-		<?php endfor; ?>
+		<?php endforeach; ?>
 	</div>
 	<div class="row mt-4">
 		<div class="col">
@@ -83,10 +83,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<?php for ($i = 1; $i <= 4; $i++) : ?>
+		<?php foreach ($semua as $key => $value): ?>
 			<div class="col-md-6 col-lg-3 mb-3">
 				<div class="card h-100">
-					<img class="card-img-top" src="<?= base_url('assets') ?>/img/banners/<?= $i % 3 + 1 ?>.jpg" alt="Card image cap" />
+					<img class="card-img-top" src="<?= base_url('assets') ?>/img/banners/<?= $value % 3 + 1 ?>.jpg" alt="Card image cap" />
 					<div class="card-body">
 						<h4 class="card-title m-0">Sanjai Bambu Kuning</h4>
 						<div class="my-1">
@@ -102,7 +102,7 @@
 					</div>
 				</div>
 			</div>
-		<?php endfor; ?>
+		<?php endforeach; ?>
 	</div>
 </div>
-<?php $this->load->view('layouts/landsite/beforeContent') ?>
+<?php $this->load->view('layouts/landsite/afterContent') ?>

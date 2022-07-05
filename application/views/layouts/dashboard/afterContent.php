@@ -1,5 +1,5 @@
 					<!-- Footer -->
-					<?php require_once('partials/footer.php') ?>;
+					<?php $this->load->view('layouts/dashboard/partials/footer') ?>;
 					<!-- / Footer -->
 
 					<div class="content-backdrop fade"></div>

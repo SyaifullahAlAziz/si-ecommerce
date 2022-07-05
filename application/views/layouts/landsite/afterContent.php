@@ -1,5 +1,5 @@
 					<!-- Footer -->
-					<?php require_once('partials/footer.php') ?>
+					<?php $this->load->view('layouts/landsite/partials/footer') ?>
 					<!-- / Footer -->
 					<div class="content-backdrop fade"></div>
 				</div>
@@ -27,6 +27,5 @@
 <script src="<?= base_url('assets') ?>/js/main.js"></script>
 
 <!-- Page JS -->
-<script src="<?= base_url('assets') ?>/js/dashboards-analytics.js"></script>
 
 </html>

@@ -31,4 +31,4 @@
 		<?php endfor; ?>
 	</div>
 </div>
-<?php $this->load->view('layouts/landsite/beforeContent') ?>
+<?php $this->load->view('layouts/landsite/afterContent') ?>
