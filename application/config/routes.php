@@ -49,18 +49,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Main';
+$route['default_controller'] = 'Produk';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// Front-end
-$route['produk'] = 'frontend/produk';
-$route['toko'] = 'frontend/toko';
-$route['search'] = 'frontend/search';
+// Public User
+	$route['produk'] 	= 'produk';
+	$route['toko'] 		= 'toko';
+	$route['search'] 	= 'search';
 
-//halaman admin
-$route['admin/login']['GET']   = 'backend/login/index';
-$route['admin/aksi-login']['GET']   = 'backend/login/aksiLogin';
-$route['register']['GET']   = 'backend/login/register';
+// Authenticated User
 
-$route['admin/home']['GET']   = 'backend/home/index';
+	// Pages
+	$route['user/login']['GET']   		= 'user/login/index'; // Login page
+	$route['user/register']['GET']   	= 'user/login/register'; // Register page
+	$route['user/home']['GET']  		= 'user/home/index'; // Home page
+	$route['user']['GET']  				= 'user/home/index'; // Home page
+
+	// Request Handler
+	$route['user/aksi-login']['GET']	= 'user/login/aksiLogin'; // Login check page
+	$route['user/logout']['GET']   		= 'user/login/aksiLogout'; // Register page
