@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Halaman Login - Admin</title>
 
     <meta name="description" content="" />
 
@@ -76,7 +76,7 @@
               <!-- Logo -->
               <div class="app-brand justify-content-center">
                 <a href="index.html" class="app-brand-link gap-2">
-                  <span class="app-brand-logo demo">
+                  <!-- <span class="app-brand-logo demo">
                     <svg
                       width="25"
                       viewBox="0 0 25 42"
@@ -130,46 +130,35 @@
                         </g>
                       </g>
                     </svg>
-                  </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+                  </span> -->
+                  <b><span style="font-size:20px;" class="app-brand-text text-body fw-bolder">OLEMI.COM</span></b> 
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to Sneat! 👋</h4>
-              <p class="mb-4">Please sign-in to your account and start the adventure</p>
+              <!-- <h4 class="mb-2">Welcome to Sneat! 👋</h4>
+              <p class="mb-4">Please sign-in to your account and start the adventure</p> -->
 
-              <form id="formAuthentication" class="mb-3" action="<?= base_url('admin/aksi-login/') ?>" method="POST">
+              <form id="formAuthentication" class="mb-3" action="<?= base_url('aksi-login') ?>" method="POST">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email" autofocus>
+                  <input type="email " class="form-control" id="email" name="email_admin" placeholder="Email" autofocus>
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
-                    <label class="form-label" for="password">Password</label>
-                    <a href="auth-forgot-password-basic.html">
-                      <small>Forgot Password?</small>
-                    </a>
                   </div>
                   <div class="input-group input-group-merge">
-                    <input type="password" id="password" class="form-control" name="password" placeholder="Masukkan Password" aria-describedby="password">
+                    <input type="password" id="password" class="form-control" name="password_admin" placeholder="Password" aria-describedby="password">
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="remember-me" />
-                    <label class="form-check-label" for="remember-me"> Remember Me </label>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                  <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
                 </div>
               </form>
 
-              <p class="text-center">
-                <span>New on our platform?</span>
+              <p style="font-size:13px;" class="text-center">
+                <!-- <span>jadilah mitra kami sebagai pelapak</span> -->
                 <a href="<?= base_url('register') ?>">
-                  <span>Create an account</span>
+                  <span>Buat akun lapak</span>
                 </a>
               </p>
             </div>

@@ -53,9 +53,15 @@ $route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-//halaman admin
+//Auth Admin
 $route['admin/login']['GET']   = 'backend/login/index';
-$route['admin/aksi-login']['GET']   = 'backend/login/aksiLogin';
+$route['aksi-login']['POST']   = 'backend/login/aksiLogin';
 $route['register']['GET']   = 'backend/login/register';
+$route['aksi-register']['POST']   = 'backend/login/register';
+$route['logout']['GET']   = 'backend/login/logout';
 
+//Halaman Admin
 $route['admin/home']['GET']   = 'backend/home/index';
+$route['user']['GET'] = 'backend/user/view';
+$route['tambah-user']['GET'] = 'backend/user/tambah';
+$route['ubah-user']['GET'] = 'backend/user/ubah';
