@@ -54,18 +54,44 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Public User
-	$route['produk'] 	= 'produk';
-	$route['toko'] 		= 'toko';
-	$route['search'] 	= 'search';
+	$route['produk']['GET'] 					= 'produk'; // Produk page
+	$route['toko']['GET'] 						= 'toko'; // Toko page
+	$route['search']['GET'] 					= 'search'; // Search page
 
-// Authenticated User
+// Authenticated User		
 
-	// Pages
-	$route['user/login']['GET']   		= 'user/login/index'; // Login page
-	$route['user/register']['GET']   	= 'user/login/register'; // Register page
-	$route['user/home']['GET']  		= 'user/home/index'; // Home page
-	$route['user']['GET']  				= 'user/home/index'; // Home page
+	// Pages		
+	$route['user']['GET']  						= 'user/home/index'; // Home page [admin, pelapak, member]
+	$route['user/home']['GET']  				= 'user/home/index'; // Home page [admin, pelapak, member]
+	$route['user/login']['GET']   				= 'user/login/index'; // Login page [public]
+	$route['user/register']['GET']   			= 'user/login/register'; // Register page [public]
 
+	$route['user/my']['GET']					= ''; // User detail page [admin, pelapak, member]
+	$route['user/detail/{id}']['GET']			= ''; // User detail page [admin]
+
+	$route['user/list']['GET']					= ''; // Userlist page [admin]
+	$route['user/add']['GET']					= ''; // User adding form page [admin]
+	$route['user/edit']['GET']					= ''; // User editing form page [admin]
+	$route['user/delete']['GET']				= ''; // User deleting get request [admin]
+
+	$route['user/store/all']['GET']				= ''; // All user's store list page [admin]
+	$route['user/report/all']['GET']			= ''; // All report page [admin]
+
+	$route['user/store']['GET']					= ''; // User's store list page [pelapak]
+	$route['user/store/add']['GET']				= ''; // Form for adding new store [pelapak]
+	$route['user/store/edit/{id}']['GET']		= ''; // Form for adding new store [pelapak]
+	$route['user/store/delete/{id}']['GET']		= ''; // Store deleting get request [pelapak]
+
+	$route['user/produk']['GET']				= ''; // User's produk list page [pelapak]
+	$route['user/produk/add']['GET']			= ''; // Form for adding new produk [pelapak]
+	$route['user/produk/edit/{id}']['GET']		= ''; // Form for editing a produk [pelapak]
+	$route['user/produk/delete/{id}']['GET']	= ''; // Produk deleting get request [pelapak]
+	
+	$route['user/pesanan']['GET']				= ''; // List pesanan [pelapak, member]
+	
+	$route['user/delivery']['GET']				= ''; // List pesanan [kurir]
+
+	
 	// Request Handler
 	$route['user/aksilogin']['POST']	= 'user/login/aksiLogin'; // Login check page
 	$route['user/logout']['GET']   		= 'user/login/aksiLogout'; // Register page

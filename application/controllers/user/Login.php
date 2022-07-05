@@ -4,6 +4,7 @@ class Login extends CI_Controller
 {
     public function index()
     {
+		
         if (!empty($this->session->userdata('user'))) {
             redirect('user/home'); // Sudah Login
 		} else {

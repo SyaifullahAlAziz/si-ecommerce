@@ -5,6 +5,7 @@ class ProdukModel extends CI_Model
 
     public function terlaris()
 	{
+		
 		return [1,2,3,4];
 	}
 

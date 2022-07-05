@@ -4,9 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Migration extends CI_Controller
 {
 
-	public function index()
+	public function index($p = false)
 	{
-
+		if (!$p) return 'No migration specified';
 		// truncate data
 		$this->db->truncate('tb_provinsi');
 		$this->db->truncate('tb_kota');

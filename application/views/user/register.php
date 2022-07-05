@@ -88,7 +88,7 @@
 										</div>
 										<div class="mb-3">
 											<label for="alamat" class="form-label">Alamat</label>
-											<textarea class="form-control" id="alamat" rows="2" name="alamat"></textarea>
+											<textarea class="form-control" id="alamat" placeholder="Jl. Sudirman No. X" rows="2" name="alamat"></textarea>
 										</div>
 										<div class="row">
 											<div class="col">
@@ -100,7 +100,7 @@
 											<div class="col-5">
 												<div class="mb-3 ">
 													<label for="kodepos" class="form-label">Kode Pos</label>
-													<input class="form-control" type="number" value="18" id="kodepos" name="kodepos">
+													<input class="form-control" type="number" placeholder="10110" id="kodepos" name="kodepos">
 												</div>
 											</div>
 										</div>
@@ -166,7 +166,7 @@
 										</div>
 										<div class="mb-3">
 											<label for="alamat" class="form-label">Alamat</label>
-											<textarea class="form-control" id="alamat" rows="2" name="alamat"></textarea>
+											<textarea class="form-control" id="alamat" placeholder="Jl. Sudirman No. X" rows="2" name="alamat"></textarea>
 										</div>
 										<div class="row">
 											<div class="col">

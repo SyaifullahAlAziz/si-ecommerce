@@ -75,7 +75,7 @@
 	<!-- / Content -->
 
 
-	<?php $this->load->view('layouts/dashboard/partials/script') ?>;
+	<?php $this->load->view('layouts/dashboard/partials/script') ?>
 
 </body>
 
