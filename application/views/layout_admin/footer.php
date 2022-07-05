@@ -33,10 +33,6 @@
             </div>
             <!-- / Layout wrapper -->
 
-            <div class="buy-now">
-                <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="btn btn-danger btn-buy-now">Upgrade to Pro</a>
-            </div>
-
             <!-- Core JS -->
             <!-- build:<?= base_url('assets_admin/') ?>vendor/js/core.js -->
             <script src="<?= base_url('assets_admin/') ?>vendor/libs/jquery/jquery.js"></script>
@@ -49,6 +45,14 @@
 
             <!-- Vendors JS -->
             <script src="<?= base_url('assets_admin/') ?>vendor/libs/apex-charts/apexcharts.js"></script>
+
+            <!-- Data Table -->
+            <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#myTable').DataTable();
+                });
+            </script>
 
             <!-- Main JS -->
             <script src="<?= base_url('assets_admin/') ?>js/main.js"></script>

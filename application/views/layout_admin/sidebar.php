@@ -65,17 +65,17 @@
 
                       <ul class="menu-sub">
                           <li class="menu-item">
-                              <a href="<?= base_url('user') ?>" class="menu-link">
+                              <a href="<?= base_url('data-user') ?>" class="menu-link">
                                   <div data-i18n="Without menu">User</div>
                               </a>
                           </li>
                           <li class="menu-item">
-                              <a href="layouts-without-navbar.html" class="menu-link">
+                              <a href="<?= base_url('data-store') ?>" class="menu-link">
                                   <div data-i18n="Without navbar">Store</div>
                               </a>
                           </li>
                           <li class="menu-item">
-                              <a href="layouts-container.html" class="menu-link">
+                              <a href="<?= base_url('data-testimoni') ?>" class="menu-link">
                                   <div data-i18n="Container">Testimoni</div>
                               </a>
                           </li>
@@ -147,14 +147,6 @@
                   </div>
 
                   <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                      <!-- Search -->
-                      <div class="navbar-nav align-items-center">
-                          <div class="nav-item d-flex align-items-center">
-                              <i class="bx bx-search fs-4 lh-0"></i>
-                              <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
-                          </div>
-                      </div>
-                      <!-- /Search -->
 
                       <ul class="navbar-nav flex-row align-items-center ms-auto">
                           <!-- Place this tag where you want the button to render. -->
@@ -213,7 +205,7 @@
                                       <div class="dropdown-divider"></div>
                                   </li>
                                   <li>
-                                      <a class="dropdown-item" href="<?= base_url('logout') ?>">
+                                      <a class="dropdown-item" href="<?= base_url('admin/logout') ?>">
                                           <i class="bx bx-power-off me-2"></i>
                                           <span class="align-middle">Log Out</span>
                                       </a>

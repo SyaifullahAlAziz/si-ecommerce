@@ -1,14 +1,23 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class loginModel extends CI_Model
+class LoginModel extends CI_Model
 {
 
     public function cek_login($user, $pass)
     {
-        $email_admin = $user;
-        $password_admin = $pass;
+        $email = $user;
+        $password = $pass;
 
-        $query = $this->db->where('email_admin', $email_admin)->where('password_admin', $password_admin)->limit(1)->get('tb_admin');
+        $query = $this->db->where('email_admin', $email)->where('password_admin', $password)->limit(1)->get('tb_admin');
+        $query = $this->db->where('email_pelapak', $email)->where('password_pelapak', $password)->limit(1)->get('tb_pelapak');
+        $query = $this->db->where('email', $email)->where('password', $password)->limit(1)->get('tb_kurir');
+        $query = $this->db->where('email', $email)->where('password', $password)->limit(1)->get('tb_member');
+
+        // tb_admin
+        // tb_member
+        // tb_pelapak
+
+
 
         if ($query->num_rows() > 0) {
             return $query->row();

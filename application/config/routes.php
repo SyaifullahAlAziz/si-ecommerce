@@ -49,19 +49,37 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Welcome';
+$route['default_controller'] = 'Produk';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //Auth Admin
-$route['admin/login']['GET']   = 'backend/login/index';
-$route['aksi-login']['POST']   = 'backend/login/aksiLogin';
-$route['register']['GET']   = 'backend/login/register';
-$route['aksi-register']['POST']   = 'backend/login/register';
-$route['logout']['GET']   = 'backend/login/logout';
+$route['admin/login']['GET']   = 'admin/login/index';
+$route['aksi-login']['POST']   = 'admin/login/aksiLogin';
+$route['register']['GET']   = 'admin/login/register';
+$route['aksi-register']['POST']   = 'admin/login/register';
+$route['admin/logout']['GET']   = 'admin/login/logout';
 
 //Halaman Admin
-$route['admin/home']['GET']   = 'backend/home/index';
-$route['user']['GET'] = 'backend/user/view';
-$route['tambah-user']['GET'] = 'backend/user/tambah';
-$route['ubah-user']['GET'] = 'backend/user/ubah';
+$route['admin/home']['GET']   = 'admin/home/index';
+$route['data-user']['GET'] = 'admin/user/view';
+$route['data-store']['GET'] = 'admin/store/view';
+$route['data-testimoni']['GET'] = 'admin/testimoni/view';
+
+
+// Public User
+$route['produk'] 	= 'produk';
+$route['toko'] 		= 'toko';
+$route['search'] 	= 'search';
+
+// Authenticated User
+
+// Pages
+$route['user/login']['GET']   		= 'user/login/index'; // Login page
+$route['user/register']['GET']   	= 'user/login/register'; // Register page
+$route['user/home']['GET']  		= 'user/home/index'; // Home page
+$route['user']['GET']  				= 'user/home/index'; // Home page
+
+// Request Handler
+$route['user/aksilogin']['POST']	= 'user/login/aksiLogin'; // Login check page
+$route['user/logout']['GET']   		= 'user/login/aksiLogout'; // Register page

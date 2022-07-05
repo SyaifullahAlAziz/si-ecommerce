@@ -55,6 +55,9 @@
 
     <link rel="stylesheet" href="<?= base_url('assets_admin/') ?>vendor/libs/apex-charts/apex-charts.css" />
 
+    <!-- Data Table -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
     <!-- Page CSS -->
 
     <!-- Helpers -->
